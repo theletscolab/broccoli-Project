@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Copyright with defaults rendered without crashing 1`] = `
+<DocumentFragment>
+   
+  <div
+    class="styled__StyledCopyright-sc-8bfbnt-0 kBRwfD"
+  >
+    Copyright © Broccoli & Co. All rights reserved.2021.
+  </div>
+</DocumentFragment>
+`;

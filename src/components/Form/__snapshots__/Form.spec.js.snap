@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Form with defaults rendered without crashing 1`] = `
+<DocumentFragment>
+   
+  <form
+    class="styled__FormStyled-sc-133yddn-0 dCGduS"
+  >
+    <h2
+      class="styled__FormTitle-sc-133yddn-1 caCceO"
+    >
+      Request an invite
+    </h2>
+    <input
+      class="styled__InputStyled-sc-133yddn-3 QcXMb form-control "
+      name="name"
+      placeholder="Full name"
+      type="text"
+    />
+    <div
+      class="styled__ErrorMessage-sc-133yddn-2 fmrEOm"
+    >
+        
+    </div>
+    <input
+      class="styled__InputStyled-sc-133yddn-3 QcXMb form-control "
+      name="email"
+      placeholder="Email"
+      type="email"
+    />
+    <div
+      class="styled__ErrorMessage-sc-133yddn-2 fmrEOm"
+    >
+        
+    </div>
+    <input
+      class="styled__InputStyled-sc-133yddn-3 QcXMb form-control "
+      name="confirmEmail"
+      placeholder="Confirm email"
+      type="email"
+    />
+    <div
+      class="styled__ErrorMessage-sc-133yddn-2 fmrEOm"
+    >
+        
+    </div>
+    <button
+      class="styled__StyledButton-sc-1yy0gyz-0 kSrkyH"
+      type="submit"
+    >
+      Send
+    </button>
+  </form>
+</DocumentFragment>
+`;

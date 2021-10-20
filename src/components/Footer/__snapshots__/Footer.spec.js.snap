@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Footer with defaults rendered without crashing 1`] = `
+<DocumentFragment>
+   
+  <footer
+    class="styled__StyledFooter-sc-h8sprj-0 cTtnHY"
+  >
+    <div
+      class="styled__StyledCopyright-sc-8bfbnt-0 kBRwfD"
+    >
+      Copyright © Broccoli & Co. All rights reserved.2021.
+    </div>
+  </footer>
+</DocumentFragment>
+`;

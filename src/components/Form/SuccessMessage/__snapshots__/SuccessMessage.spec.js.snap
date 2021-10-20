@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Form > SuccessMessage with defaults rendered without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="styled__ModalContextStyled-sc-6xjet7-0 kWmZTI"
+  >
+    <form
+      class="styled__StyledSuccessMessage-sc-fz2q1d-0 fdnjXM"
+    >
+      <h2
+        class="styled__MessageTitle-sc-fz2q1d-1 elqgCX"
+      >
+        All done!
+      </h2>
+      <div
+        class="styled__Message-sc-fz2q1d-2 PDMrt"
+      >
+        You will be one of the first to experience Broccoli & Co. when we launch.
+      </div>
+      <button
+        class="styled__StyledButton-sc-1yy0gyz-0 kSrkyH"
+      >
+        OK
+      </button>
+    </form>
+     
+  </div>
+</DocumentFragment>
+`;

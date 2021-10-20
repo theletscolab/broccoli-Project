@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Button Overall rendered without crashing 1`] = `
+<DocumentFragment>
+   
+  <button
+    class="styled__StyledButton-sc-1yy0gyz-0 kSrkyH"
+  >
+    Request an invite
+  </button>
+</DocumentFragment>
+`;
