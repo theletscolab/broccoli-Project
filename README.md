@@ -7,7 +7,7 @@ The Web-facing UI for Broccoli & Co.
 <!-- prettier-ignore -->
 | name | branch | deploys on | status | url |
 | ---- | ------ | ---------- | ------ | --- |
-| `storybook` | `master` | merge only | [![Netlify Status](https://api.netlify.com/api/v1/badges/9417c3e0-071d-4b88-b170-2c4bfd466f18/deploy-status)](https://broccoliproject-storybook.netlify.app) | [`broccoliproject-storybook.netlify.app`](https://broccoliproject-storybook.netlify.app) |
+| `storybook` | `develop` | merge only | [![Netlify Status](https://api.netlify.com/api/v1/badges/9417c3e0-071d-4b88-b170-2c4bfd466f18/deploy-status)](https://broccoliproject-storybook.netlify.app) | [`broccoliproject-storybook.netlify.app`](https://broccoliproject-storybook.netlify.app) |
 | `develop` | `develop` | PRs and merge | | |
 | `production` | `production` | merge only | [![Netlify Status](https://api.netlify.com/api/v1/badges/e7635c8d-ef00-428b-bbd6-8a56870ba1e8/deploy-status)](https://broccoliproject.netlify.app/) | [`broccoliproject.netlify.app/`](https://broccoliproject.netlify.app/) |
 
