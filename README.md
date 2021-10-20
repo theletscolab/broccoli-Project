@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Broccoli & Co UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Web-facing UI for Broccoli & Co.
 
-## Available Scripts
+## Deployments
 
-In the project directory, you can run:
+<!-- prettier-ignore -->
+| name | branch | deploys on | status | url |
+| ---- | ------ | ---------- | ------ | --- |
+| `storybook` | `master` | merge only | [![Netlify Status](https://api.netlify.com/api/v1/badges/9417c3e0-071d-4b88-b170-2c4bfd466f18/deploy-status)](https://broccoliproject-storybook.netlify.app) | [`broccoliproject-storybook.netlify.app`](https://broccoliproject-storybook.netlify.app) |
+| `develop` | `develop` | PRs and merge | | |
+| `production` | `production` | merge only | [![Netlify Status](https://api.netlify.com/api/v1/badges/e7635c8d-ef00-428b-bbd6-8a56870ba1e8/deploy-status)](https://broccoliproject.netlify.app/) | [`broccoliproject.netlify.app/`](https://broccoliproject.netlify.app/) |
 
-### `yarn start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [NodeJS](https://nodejs.org), version `14.16.0` (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.) - Does not quite work with Node 15 yet or NPM 7.
+- [npm](https://www.npmjs.com), version `6.x` This is installed with NodeJS on mac and linux systems by default.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Install dependencies
 
-### `yarn test`
+```sh
+npm ci
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Directory Structur
 
-### `yarn build`
+Your folder hierarchy will be something like this:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bass
+.                                       // Project folder.
+├── public                              // All public static assets go here.
+│   ├── fonts                           // Fonts' files.
+│   └── ...
+├── src                                 // Main source code directory.
+│   ├── App.js                          // Main App component.
+│   ├── index.js                        // React application boot.
+│   ├── components                      // All React Components go in here.
+│   │   ├── Button                      // Button component.
+│   │   │   └── __snapshots__           // Snapshot of Unit test.
+│   │   │   └── Button.spec.js          // Button unit test file.
+│   │   │   └── index.js
+│   │   └── ...
+│   ├── context                         // All context go here.
+│   │   └── modalContext.js
+|   ├── features                        // All features go in here.
+│   |   └── api.js                      // Api helper utility.
+│   ├── hooks                           // React hooks folder.
+│   │   └── useModal.js                 // Hook for modal.
+│   ├── pages                           // App pages folder.
+│   │   └── Main.js                     // Main page.
+│   ├── stories                         // Storybook folder.
+│   │   ├── assets                      // Default assets for the Storybook.
+│   │   └── components                  // All storybook components go in here.
+│   │       └── Button.stories.js
+│   │       └── ...
+│   ├── theme                           // App theme folder.
+│   │   ├── buttons.js                  // Button styles and size variants for the theme.
+│   │   ├── global.js                   // Global styles.
+│   │   └── index.js                    // Project theme coinfiguration.
+│   └── utils                           // Utility functions used in the project.
+│       ├── dates.js                    // Date helper utility.
+│       └── test-wrapper.js             // Testing utility helper.
+├── .prettierrc                         // Prettier configuration.
+├── package.json                        // Project dependencies.
+└── README.md                           // Documentation for project.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run the app in development mode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm run start
+```
 
-### `yarn eject`
+Open [localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The site will reload if you make edits. You will also see any lint errors in the console.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run the unit tests
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+npm run test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Launches the test runner in interactive watch mode.
 
-## Learn More
+- See [create-react-app/docs/running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Storybook
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm run storybook
+```
 
-### Code Splitting
+Open [localhost:6006](http://localhost:6006) to view it in the browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The site will reload if you make edits. You will also see any lint errors in the console.
 
-### Analyzing the Bundle Size
+- See [storybook.js.org](https://storybook.js.org) for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please see the [contributing notes](CONTRIBUTING.md).
