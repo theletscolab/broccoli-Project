@@ -13,10 +13,10 @@ export default {
 }
 
 const Template = args => {
-  theme.colors.grey800 = args.color
+  theme.colors.grey800 = args.textColor
   return (
     <ThemeProvider theme={theme}>
-      <Logo style={{ color: args.textColor }} {...args} />
+      <Logo {...args} />
     </ThemeProvider>
   )
 }

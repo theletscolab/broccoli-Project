@@ -22,6 +22,5 @@ const Template = args => (
 export const Default = Template.bind({})
 Default.args = {
   formTitle: 'Form',
-  formBtnTxt: 'Submit',
-  onSuccess: { onSuccess: () => {} }
+  formBtnTxt: 'Submit'
 }

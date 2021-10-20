@@ -2,8 +2,8 @@ import React from 'react'
 import Logo from '../Logo'
 import { HeaderStyled } from './styled'
 
-const Header = () => (
-  <HeaderStyled>
+const Header = ({ ...props }) => (
+  <HeaderStyled {...props}>
     <Logo />
   </HeaderStyled>
 )
