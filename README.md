@@ -22,7 +22,7 @@ The Web-facing UI for Broccoli & Co.
 npm ci
 ```
 
-#### Directory Structur
+#### Directory Structure
 
 Your folder hierarchy will be something like this:
 
