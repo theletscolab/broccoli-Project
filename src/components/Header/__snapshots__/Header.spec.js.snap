@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Header with defaults rendered without crashing 1`] = `
+<DocumentFragment>
+   
+  <header
+    class="styled__HeaderStyled-sc-cbvljd-0 bACyDG"
+  >
+    <a
+      class="styled__StyledLogo-sc-1v84jjx-0 dfgzSu"
+      href="/"
+    >
+      Broccoli & Co.
+    </a>
+  </header>
+</DocumentFragment>
+`;

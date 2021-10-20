@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Logo with defaults rendered without crashing 1`] = `
+<DocumentFragment>
+   
+  <a
+    class="styled__StyledLogo-sc-1v84jjx-0 dfgzSu"
+    href="/"
+  >
+    Broccoli & Co.
+  </a>
+</DocumentFragment>
+`;
